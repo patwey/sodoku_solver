@@ -18,10 +18,10 @@ class SodokuGridTest < Minitest::Test
     assert_equal expected_top_left_box, @sodoku_grid.top_left_box
   end
 
-  def test_it_has_a_top_middle_box
-    expected_top_middle_box = [4,5,6,13,14,15,22,23,24]
+  def test_it_has_a_top_mid_box
+    expected_top_mid_box = [4,5,6,13,14,15,22,23,24]
 
-    assert_equal expected_top_middle_box, @sodoku_grid.top_middle_box
+    assert_equal expected_top_mid_box, @sodoku_grid.top_mid_box
   end
 
   def test_it_has_a_top_right_box
@@ -30,40 +30,40 @@ class SodokuGridTest < Minitest::Test
     assert_equal expected_top_right_box, @sodoku_grid.top_right_box
   end
 
-  def test_it_has_a_middle_left_box
-    expected_middle_left_box = [28,29,30,37,38,39,46,47,48]
+  def test_it_has_a_mid_left_box
+    expected_mid_left_box = [28,29,30,37,38,39,46,47,48]
 
-    assert_equal expected_middle_left_box, @sodoku_grid.middle_left_box
+    assert_equal expected_mid_left_box, @sodoku_grid.mid_left_box
   end
 
-  def test_it_has_a_middle_middle_box
-    expected_middle_middle_box = [31,32,33,40,41,42,49,50,51]
+  def test_it_has_a_mid_mid_box
+    expected_mid_mid_box = [31,32,33,40,41,42,49,50,51]
 
-    assert_equal expected_middle_middle_box, @sodoku_grid.middle_middle_box
+    assert_equal expected_mid_mid_box, @sodoku_grid.mid_mid_box
   end
 
-  def test_it_has_a_middle_right_box
-    expected_middle_right_box = [34,35,36,43,44,45,52,53,54]
+  def test_it_has_a_mid_right_box
+    expected_mid_right_box = [34,35,36,43,44,45,52,53,54]
 
-    assert_equal expected_middle_right_box, @sodoku_grid.middle_right_box
+    assert_equal expected_mid_right_box, @sodoku_grid.mid_right_box
   end
 
-  def test_it_has_a_bottom_left_box
-    expected_bottom_left_box = [55,56,57,64,65,66,73,74,75]
+  def test_it_has_a_bot_left_box
+    expected_bot_left_box = [55,56,57,64,65,66,73,74,75]
 
-    assert_equal expected_bottom_left_box, @sodoku_grid.bottom_left_box
+    assert_equal expected_bot_left_box, @sodoku_grid.bot_left_box
   end
 
-  def test_it_has_a_bottom_middle_box
-    expected_bottom_middle_box = [58,59,60,67,68,69,76,77,78]
+  def test_it_has_a_bot_mid_box
+    expected_bot_mid_box = [58,59,60,67,68,69,76,77,78]
 
-    assert_equal expected_bottom_middle_box, @sodoku_grid.bottom_middle_box
+    assert_equal expected_bot_mid_box, @sodoku_grid.bot_mid_box
   end
 
-  def test_it_has_a_bottom_right_box
-    expected_bottom_right_box = [61,62,63,70,71,72,79,80,81]
+  def test_it_has_a_bot_right_box
+    expected_bot_right_box = [61,62,63,70,71,72,79,80,81]
 
-    assert_equal expected_bottom_right_box, @sodoku_grid.bottom_right_box
+    assert_equal expected_bot_right_box, @sodoku_grid.bot_right_box
   end
 
   # Helper Methods

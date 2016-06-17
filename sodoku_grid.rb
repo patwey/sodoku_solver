@@ -29,7 +29,7 @@ class SodokuGrid
     get_box(0, 0)
   end
 
-  def top_middle_box
+  def top_mid_box
     get_box(0, 1)
   end
 
@@ -37,27 +37,27 @@ class SodokuGrid
     get_box(0, 2)
   end
 
-  def middle_left_box
+  def mid_left_box
     get_box(1, 0)
   end
 
-  def middle_middle_box
+  def mid_mid_box
     get_box(1, 1)
   end
 
-  def middle_right_box
+  def mid_right_box
     get_box(1, 2)
   end
 
-  def bottom_left_box
+  def bot_left_box
     get_box(2, 0)
   end
 
-  def bottom_middle_box
+  def bot_mid_box
     get_box(2, 1)
   end
 
-  def bottom_right_box
+  def bot_right_box
     get_box(2, 2)
   end
 
