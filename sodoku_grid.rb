@@ -8,19 +8,19 @@ class SodokuGrid
   def blank_grid
     [
       [
-        [nil,nil,nil],[nil,nil,nil],[nil,nil,nil],
-        [nil,nil,nil],[nil,nil,nil],[nil,nil,nil],
-        [nil,nil,nil],[nil,nil,nil],[nil,nil,nil],
+        [0,0,0],[0,0,0],[0,0,0],
+        [0,0,0],[0,0,0],[0,0,0],
+        [0,0,0],[0,0,0],[0,0,0]
       ],
       [
-        [nil,nil,nil],[nil,nil,nil],[nil,nil,nil],
-        [nil,nil,nil],[nil,nil,nil],[nil,nil,nil],
-        [nil,nil,nil],[nil,nil,nil],[nil,nil,nil],
+        [0,0,0],[0,0,0],[0,0,0],
+        [0,0,0],[0,0,0],[0,0,0],
+        [0,0,0],[0,0,0],[0,0,0]
       ],
       [
-        [nil,nil,nil],[nil,nil,nil],[nil,nil,nil],
-        [nil,nil,nil],[nil,nil,nil],[nil,nil,nil],
-        [nil,nil,nil],[nil,nil,nil],[nil,nil,nil],
+        [0,0,0],[0,0,0],[0,0,0],
+        [0,0,0],[0,0,0],[0,0,0],
+        [0,0,0],[0,0,0],[0,0,0]
       ]
     ]
   end
@@ -62,10 +62,10 @@ class SodokuGrid
     get_box(2, 2)
   end
 
-  def get_box(box_row, box_top_row)
-    (@grid[box_row][box_top_row] +
-     @grid[box_row][box_top_row + 3] +
-     @grid[box_row][box_top_row + 6]).flatten
+  def get_box(horizontal_third, top_triplet)
+    (@grid[horizontal_third][top_triplet] +
+     @grid[horizontal_third][top_triplet + 3] +
+     @grid[horizontal_third][top_triplet + 6]).flatten
   end
 
   # Row Methods
